@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Marquee from "react-fast-marquee";
 
 const Home = () => {
   return (
@@ -59,7 +60,6 @@ const Home = () => {
       </section>
 
 
-
       <section className='home-wrapper-2 py-5'>
         <div className="container-xxl">
           <div className="row">
@@ -110,13 +110,62 @@ const Home = () => {
         <div className="container-xxl">
           <div className="row">
             <div className="col-12">
-              <div className="categories d-flex justify-content-between align-items-center ">
-                <div>
+              <div className="categories d-flex flex-wrap  justify-content-center align-items-center ">
+                <div className='d-flex gap align-items-center  justify-content-between '>
                   <div>
                     <h6>Cameras</h6>
                     <p>10 Items</p>
                   </div>
-                  <img src="images/camera.jpg" alt="" />
+                  <img src="images/camera.jpg" alt="Camera" />
+                </div>
+                <div className='d-flex gap align-items-center justify-content-between  '>
+                  <div>
+                    <h6>Smart TVs</h6>
+                    <p>10 Items</p>
+                  </div>
+                  <img src="images/tv.jpg" alt="Smart Tv" />
+                </div>
+                <div className='d-flex gap align-items-center justify-content-between  '>
+                  <div>
+                    <h6>Computer & Laptops</h6>
+                    <p>10 Items</p>
+                  </div>
+                  <img src="images/laptop.jpg" alt="Computer & Laptops" />
+                </div>
+                <div className='d-flex gap align-items-center  justify-content-between '>
+                  <div>
+                    <h6>Headphones</h6>
+                    <p>10 Items</p>
+                  </div>
+                  <img src="images/headphone.jpg" alt="Headphones" />
+                </div>
+                <div className='d-flex gap align-items-center  justify-content-between '>
+                  <div>
+                    <h6>Portable Speakers</h6>
+                    <p>10 Items</p>
+                  </div>
+                  <img src="images/speaker.jpg" alt="Speakers" />
+                </div>
+                <div className='d-flex gap align-items-center justify-content-between '>
+                  <div>
+                    <h6>Accesories</h6>
+                    <p>10 Items</p>
+                  </div>
+                  <img src="images/acc.jpg" alt="Accesories" />
+                </div>
+                <div className='d-flex gap align-items-center justify-content-between  '>
+                  <div>
+                    <h6>Home Appliances</h6>
+                    <p>10 Items</p>
+                  </div>
+                  <img src="images/homeapp.jpg" alt="Home Appliances" />
+                </div>
+                <div className='d-flex gap-30 align-items-center justify-content-between  '>
+                  <div>
+                    <h6>Smart Watches</h6>
+                    <p>10 Items</p>
+                  </div>
+                  <img style={{ width: "110px", height: "110px" }} src="images/smartwatch.jpg" alt="Watches" />
                 </div>
               </div>
             </div>
@@ -124,6 +173,42 @@ const Home = () => {
         </div>
       </section>
 
+      <section className='marque-wrapper py-5 '>
+        <div className="container-xxl">
+          <div className="row">
+            <div className="col-12">
+              <div className="marque-inner-wrapper card-wrapper">
+                <Marquee className='d-flex'>
+                  <div className='mx-4 w-25 '>
+                    <img src="images/brand-01.png" alt="brand" />
+                  </div>
+                  <div className='mx-4 w-25 '>
+                    <img src="images/brand-02.png" alt="brand" />
+                  </div>
+                  <div className='mx-4 w-25 '>
+                    <img src="images/brand-03.png" alt="brand" />
+                  </div>
+                  <div className='mx-4 w-25 '>
+                    <img src="images/brand-04.png" alt="brand" />
+                  </div>
+                  <div className='mx-4 w-25 '>
+                    <img src="images/brand-05.png" alt="brand" />
+                  </div>
+                  <div className='mx-4 w-25 '>
+                    <img src="images/brand-06.png" alt="brand" />
+                  </div>
+                  <div className='mx-4 w-25 '>
+                    <img src="images/brand-07.png" alt="brand" />
+                  </div>
+                  <div className='mx-4 w-25 '>
+                    <img src="images/brand-08.png" alt="brand" />
+                  </div>
+                </Marquee>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   )
 }
