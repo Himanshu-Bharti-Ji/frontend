@@ -13,6 +13,7 @@
   --color-febd69: #febd69;
   --color-232f3e: #232f3e;
   --color-bf4800: #bf4800;
+  --color-f5f5f7: #f5f5f7;
 }
 
 body{
@@ -57,6 +58,11 @@ a {
 }
 
 /* Header Part Start */
+
+.header-upper-links .badge-w {
+  width: 34px;
+  height: 20px;
+}
 
 .header-top-strip {
   background-color: var(--color-131921);
@@ -139,7 +145,7 @@ footer .input-group-text {
 
 .main-banner-content {
   top: 15%;
-  left: 5%;
+  left: 6%;
 }
 
 .main-banner-content h4 {
@@ -170,7 +176,7 @@ footer .input-group-text {
 /*  */
 
 .small-banner-content {
-  top: 25%;
+  top: 22%;
   left: 10%;
 }
 
@@ -179,7 +185,7 @@ footer .input-group-text {
   font-weight: 400;
   line-height: 24px;
   color: var(--color-bf4800);
-  margin: 0 0 12px;
+  margin: 0 0 7px;
   letter-spacing: 0.3px;
 
 }
@@ -188,7 +194,7 @@ footer .input-group-text {
   font-size: 22px;
   line-height: 34px;
   font-weight: 500;
-  letter-spacing: -2px;
+  letter-spacing: -1px;
   text-transform: none;
 }
 
@@ -202,6 +208,25 @@ footer .input-group-text {
 .small-banner {
   width: 49%;
 }
+
+
+/* Home Wrapper-2 Part Start */
+
+.home-wrapper-2 {
+  background-color: var(--color-f5f5f7);
+}
+/* Home Wrapper-2 Part End Here*/
+
+/* Categories Section Start */
+
+.categories {
+  background-color: white;
+  box-shadow: 0 0 10px #0000001a;
+  padding: 15px;
+}
+
+/* Categories Section End Here*/
+
 
 /* Home Page End Here*/
 
