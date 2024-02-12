@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import Marquee from "react-fast-marquee";
 import BlogCard from '../components/BlogCard';
 import ProductCard from '../components/ProductCard';
+import SpecialProduct from '../components/SpecialProduct';
 
 const Home = () => {
   return (
@@ -11,13 +12,36 @@ const Home = () => {
         <div className="container-xxl">
           <div className="row">
             <div className="col-6">
-              <div className="main-banner position-relative  ">
-                <img className='img-fluid rounded-3 ' src="images/main-banner-1.jpg" alt="Main Banner image" />
-                <div className="main-banner-content position-absolute ">
-                  <h4>SUPPERCHARGED FOR PROS.</h4>
-                  <h5>iPad S13+ Pro.</h5>
-                  <p>From ₹82975.44 or ₹3456.89/mo.<br />for 24 mo.</p>
-                  <Link className='button'>BUY NOW</Link>
+
+
+
+              <div id="carouselExampleCaptions" className="main-banner position-relative carousel slide" data-bs-ride="carousel">
+
+                <div className="gap-2 car-buttons">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                </div>
+                <div className="carousel-inner">
+                  <div className="carousel-item active">
+                    <img className='img-fluid rounded-3 ' src="images/main-banner-1.jpg" alt="Main Banner image" />
+                    <div className="main-banner-content position-absolute ">
+                      <h4>SUPPERCHARGED FOR PROS.</h4>
+                      <h5>iPad S13+ Pro.</h5>
+                      <p>From ₹82975.44 or ₹3456.89/mo.<br />for 24 mo.</p>
+                      <Link className='button'>BUY NOW</Link>
+                    </div>
+                  </div>
+                  <div className="carousel-item">
+                    <img className='img-fluid rounded-3 ' src="images/main-banner.jpg" alt="Main Banner image" />
+                    <div className="main-banner-content position-absolute ">
+                      <h4>SUPPERCHARGED FOR PROS.</h4>
+                      <h5>Special Sale</h5>
+                      <p>From ₹82933.28 or ₹3455.14/mo.<br />for 24 mo.</p>
+                      <Link className='button'>BUY NOW</Link>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -185,6 +209,24 @@ const Home = () => {
             <ProductCard />
             <ProductCard />
             <ProductCard />
+          </div>
+        </div>
+      </section>
+
+      <section className="special-wrapper home-wrapper-2 py-5">
+        <div className="container-xxl">
+          <div className="row">
+            <div className="col-12">
+              <h3 className="section-heading">Special Products</h3>
+            </div>
+          </div>
+          <div className="row">
+            <SpecialProduct />
+            <SpecialProduct />
+            <SpecialProduct />
+            <SpecialProduct />
+            <SpecialProduct />
+            <SpecialProduct />
           </div>
         </div>
       </section>
