@@ -162,8 +162,10 @@ footer .input-group-text {
 
 /* Home Page Start */
 
+
+
 .main-banner-content {
-  top: 15%;
+  top: 10%;
   left: 6%;
 }
 
@@ -228,9 +230,28 @@ footer .input-group-text {
 
 
 /*  */
+.small-banner {
+  overflow: hidden;
+}
+
+.small-banner:hover {
+  cursor: pointer;
+}
+
+
+.small-banner:hover img {
+  transform: scale(1.10);
+  transition: .3s cubic-bezier(0.51, 0.01, 0.46, 0.97);
+  
+}
+
+.small-banner:not(:hover) img {
+  transform: scale(1);
+  transition: .3s cubic-bezier(0.51, 0.01, 0.46, 0.97);
+}
 
 .small-banner-content {
-  top: 22%;
+  top: 15%;
   left: 10%;
 }
 
@@ -324,6 +345,7 @@ footer .input-group-text {
 
 .blog-card:hover  .card-image {
   transform: scale(1.05);
+  transition: .3s cubic-bezier(0.51, 0.01, 0.46, 0.97);
 }
 
 .blog-content {
@@ -377,7 +399,7 @@ footer .input-group-text {
 
 .product-card .product-image > img:last-child {
   display: none;
-  transition: 0.3s;
+  
 }
 
 .product-card:hover .action-bar {
@@ -391,8 +413,14 @@ footer .input-group-text {
 .product-card:hover .product-image > img:last-child {
   display: block;
   transform: scale(1.05) rotate(4deg);
+  transition: .3s cubic-bezier(0.51, 0.01, 0.46, 0.97);
   z-index: 1;
   
+}
+
+.product-card:not(:hover) .product-image > img:last-child {
+  transform: scale(1);
+  transition: .3s cubic-bezier(0.51, 0.01, 0.46, 0.97);
 }
 
 .product-card .product-details h6 {
@@ -448,7 +476,19 @@ footer .input-group-text {
 
 /* Famous Card Start */
 
+.famous-card:hover{
+  cursor: pointer;
+}
 
+.famous-card:hover img {
+  transform: scale(1.10);
+  transition: .3s cubic-bezier(0.51, 0.01, 0.46, 0.97);
+}
+
+.famous-card:not(:hover) img {
+  transform: scale(1);
+  transition: .3s cubic-bezier(0.51, 0.01, 0.46, 0.97);
+}
 
 .famous-wrapper .famous-content {
   top: 10%;

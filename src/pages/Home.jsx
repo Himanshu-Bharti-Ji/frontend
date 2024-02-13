@@ -12,9 +12,7 @@ const Home = () => {
         <div className="container-xxl">
           <div className="row">
             <div className="col-6">
-
-
-
+              
               <div id="carouselExampleCaptions" className="main-banner position-relative carousel slide" data-bs-ride="carousel">
 
                 <div className="gap-2 car-buttons">
@@ -228,21 +226,21 @@ const Home = () => {
             </div>
             <div className="col-4">
               <div className="famous-card position-relative ">
-                <img className='img-fluid ' src="images/famous/smartwatch-3.png" alt="famous" />
+                <img className='img-fluid ' src="images/famous/iphone-2.jpg" alt="famous" />
                 <div className="famous-content position-absolute ">
-                  <h5>Big Screen</h5>
-                  <h6>Smart Watch Series 7</h6>
-                  <p>From ₹33114.09 or ₹1379.34/mo. for 24 mo* </p>
+                  <h5>Smartphones</h5>
+                  <h6>iPhone 15 Pro</h6>
+                  <p>From ₹134900.00 or ₹21483.00/mo. for 24 mo* </p>
                 </div>
               </div>
             </div>
             <div className="col-4">
               <div className="famous-card position-relative ">
-                <img className='img-fluid ' src="images/famous/smartwatch-3.png" alt="famous" />
+                <img className='img-fluid ' src="images/famous/laptop-2.jpg" alt="famous" />
                 <div className="famous-content position-absolute ">
-                  <h5>Big Screen</h5>
-                  <h6>Smart Watch Series 7</h6>
-                  <p>From ₹33114.09 or ₹1379.34/mo. for 24 mo* </p>
+                  <h5>Studio Display</h5>
+                  <h6>Apple MacBook Air</h6>
+                  <p>From ₹83,990 or ₹1379.34/mo. for 24 mo* </p>
                 </div>
               </div>
             </div>
