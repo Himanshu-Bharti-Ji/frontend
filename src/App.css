@@ -624,6 +624,41 @@ footer .input-group-text {
 }
 
 
+/* Right Side Css */
+
+
+
+.filter-short-grid {
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.filter-left p {
+  width: 100px;
+}
+
+.selector {
+  background-color: #f2f2f2;
+  font-weight: 400;
+  border: 1px solid #f2f2f2;
+}
+
+.selector:focus {
+  background-color: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  outline: none;
+}
+
+.grid img {
+  width: 34px;
+  height: 34px;
+  background-color: #f2f2f2;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+
 /* Our Store Page End Here*/
 
 
