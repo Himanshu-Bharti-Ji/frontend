@@ -7,7 +7,7 @@ const Footer = () => {
     <>
       {/* Footer Upper part code Start */}
       <footer className='py-4'>
-        <div className="container-xxl">
+        <div className="container-1640">
           <div className="row align-items-center ">
             <div className="col-5">
               <div className="footer-top-data d-flex gap-30 align-items-center ">
@@ -29,7 +29,7 @@ const Footer = () => {
 
       {/* Footer Middle part code Start */}
       <footer className='py-3'>
-        <div className="container-xxl">
+        <div className="container-1640">
           <div className="row">
             <div className="col-4">
               <h4 className='mb-4 text-white '>Contact Us</h4>
@@ -93,7 +93,7 @@ const Footer = () => {
 
       {/* Footer Bottom part code Start */}
       <footer className='py-4'>
-        <div className="container-xxl">
+        <div className="container-1640">
           <div className="row">
             <div className="col-12">
               <p className="text-center mb-0 text-white ">&copy; {new Date().getFullYear()} Powered by On4All ~ An E-commerce Website</p>

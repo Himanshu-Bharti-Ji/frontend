@@ -5,12 +5,18 @@ import { Link } from 'react-router-dom';
 function SpecialProduct() {
     return (
         <div className='col-4 mb-4 '>
-            <div className="special-product-card">
-                <div className="d-flex justify-content-between ">
-                    <div>
+            <div className="special-product-card  ">
+                <div className="d-flex justify-content-between row">
+                    <div className='special-product-images col-6 '>
+                        <div className='special-product-head-image'>
                         <img className='img-fluid ' src="images/special product/samsungphone.jpg" alt="phone" />
+                        </div>
+                        <div className='d-flex gap-5  special-product-sub-image'>
+                        <img className='img-fluid ' src="images/special product/samsungphone-2.jpg" alt="phone" />
+                        <img className='img-fluid ' src="images/special product/samsungphone-3.jpg" alt="phone" />
+                        </div>
                     </div>
-                    <div className="special-product-content">
+                    <div className="special-product-content col-6 ">
                         <h5 className="brand">Samsung</h5>
                         <h6 className="title">Samsung Galaxy Note 10+</h6>
                         <ReactStars
@@ -39,7 +45,7 @@ function SpecialProduct() {
                                 <div className="progress-bar" role="progressbar" style={{width: "25%"}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
-                        <Link className='button'>Add to Cart</Link>
+                        <Link className='button mt-3 '>Add to Cart</Link>
                     </div>
                 </div>
             </div>

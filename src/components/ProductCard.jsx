@@ -4,14 +4,13 @@ import { Link } from 'react-router-dom';
 
 function ProductCard() {
     return (
-        <div className='col-3'>
+        <div className='col-2'>
             <Link className="product-card position-relative ">
                 <div className="wishlist-icon position-absolute ">
                     <Link><img src="images/wish.svg" alt="" /></Link>
                 </div>
                 <div className="product-image">
-                    <img src="images/boat-headphone.jpg" alt="product image" />
-                    <img src="images/boat-headphone.jpg" alt="product image" />
+                    <img className='img-fluid ' src="images/boat-headphone.jpg" alt="product image" />  
                 </div>
                 <div className="product-details">
                     <h6 className="brand">boAt</h6>

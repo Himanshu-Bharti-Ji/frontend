@@ -7,7 +7,7 @@ const Header = () => {
     <>
       {/* Header Top Strip code Start */}
       <header className='header-top-strip py-3 '>
-        <div className='container-xxl'>
+        <div className='container-1640'>
           <div className="row">
             <div className="col-6">
               <p className='text-white mb-0  '>Free Shipping over ₹499 & Free Returns</p>
@@ -23,9 +23,9 @@ const Header = () => {
 
       {/* Header Upper part code Start */}
       <header className='header-upper py-3 '>
-        <div className='container-xxl'>
-          <div className="row align-items-center ">
-            <div className="col-2">
+        <div className='container-1640'>
+          <div className="row align-items-center justify-content-between">
+            <div className="col-1">
               <h2><Link className='text-white'>On4All</Link></h2>
             </div>
             <div className="col-5">
@@ -34,7 +34,7 @@ const Header = () => {
                 <span className="input-group-text p-3 " id="basic-addon2"><BsSearch className='fs-6' /></span>
               </div>
             </div>
-            <div className="col-5">
+            <div className="col-4">
               <div className="header-upper-links d-flex align-items-center justify-content-between ">
                 <div>
                   <Link className='d-flex align-items-center gap-10 text-white '>
@@ -74,7 +74,7 @@ const Header = () => {
 
       {/* Header Bottom part code Start */}
       <header className='header-bottom py-3 '>
-        <div className="container-xxl">
+        <div className="container-1640">
           <div className="row">
             <div className="col-12">
               <div className="menu-botton d-flex align-items-center gap-30">

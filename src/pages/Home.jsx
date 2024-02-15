@@ -9,10 +9,10 @@ const Home = () => {
   return (
     <>
       <section className='home-wrapper-1 py-5 '>
-        <div className="container-xxl">
+        <div className="container-1640">
           <div className="row">
             <div className="col-6">
-              
+
               <div id="carouselExampleCaptions" className="main-banner position-relative carousel slide" data-bs-ride="carousel">
 
                 <div className="gap-2 car-buttons">
@@ -85,7 +85,7 @@ const Home = () => {
 
 
       <section className='home-wrapper-2 py-5'>
-        <div className="container-xxl">
+        <div className="container-1640">
           <div className="row">
             <div className="col-12">
               <div className="services d-flex align-items-center justify-content-between">
@@ -131,7 +131,7 @@ const Home = () => {
       </section>
 
       <section className='home-wrapper-2 py-5'>
-        <div className="container-xxl">
+        <div className="container-1640">
           <div className="row">
             <div className="col-12">
               <div className="categories d-flex flex-wrap  justify-content-center align-items-center ">
@@ -198,23 +198,28 @@ const Home = () => {
       </section>
 
       <section className='featured-wrapper py-5 home-wrapper-2'>
-        <div className="container-xxl">
+        <div className="container-1640">
           <div className="row">
             <div className="col-12">
               <h3 className="section-heading">Featured Collection</h3>
             </div>
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
+            <div className='d-flex flex-wrap justify-content-between gap-4'>
+              <ProductCard />
+              <ProductCard />
+              <ProductCard />
+              <ProductCard />
+              <ProductCard />
+            </div>
+
+
           </div>
         </div>
       </section>
 
       <section className="famous-wrapper py-5 home-wrapper-2">
-        <div className="container-xxl">
+        <div className="container-1640">
           <div className="row">
-            <div className="col-4">
+            <div className="col-3">
               <div className="famous-card position-relative ">
                 <img className='img-fluid ' src="images/famous/smartwatch-3.png" alt="famous" />
                 <div className="famous-content position-absolute ">
@@ -224,7 +229,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div className="col-4">
+            <div className="col-3">
               <div className="famous-card position-relative ">
                 <img className='img-fluid ' src="images/famous/iphone-2.jpg" alt="famous" />
                 <div className="famous-content position-absolute ">
@@ -234,7 +239,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div className="col-4">
+            <div className="col-3">
               <div className="famous-card position-relative ">
                 <img className='img-fluid ' src="images/famous/laptop-2.jpg" alt="famous" />
                 <div className="famous-content position-absolute ">
@@ -244,12 +249,22 @@ const Home = () => {
                 </div>
               </div>
             </div>
+            <div className="col-3">
+              <div className="famous-card position-relative ">
+                <img className='img-fluid ' src="images/famous/smartwatch-3.png" alt="famous" />
+                <div className="famous-content position-absolute ">
+                  <h5>Big Screen</h5>
+                  <h6>Smart Watch Series 7</h6>
+                  <p>From ₹33114.09 or ₹1379.34/mo. for 24 mo* </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       <section className="special-wrapper home-wrapper-2 py-5">
-        <div className="container-xxl">
+        <div className="container-1640">
           <div className="row">
             <div className="col-12">
               <h3 className="section-heading">Special Products</h3>
@@ -267,21 +282,24 @@ const Home = () => {
       </section>
 
       <section className='popular-wrapper py-5 home-wrapper-2'>
-        <div className="container-xxl">
+        <div className="container-1640">
           <div className="row">
             <div className="col-12">
               <h3 className="section-heading">Our Popular Products</h3>
             </div>
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
+            <div className='d-flex flex-wrap justify-content-between gap-4'>
+              <ProductCard />
+              <ProductCard />
+              <ProductCard />
+              <ProductCard />
+              <ProductCard />
+            </div>
           </div>
         </div>
       </section>
 
       <section className='marque-wrapper py-5 home-wrapper-2'>
-        <div className="container-xxl">
+        <div className="container-1640">
           <div className="row">
             <div className="col-12">
               <div className="marque-inner-wrapper card-wrapper">
@@ -319,7 +337,7 @@ const Home = () => {
 
 
       <section className='blog-wrapper py-5 home-wrapper-2'>
-        <div className="container-xxl">
+        <div className="container-1640">
           <div className="row">
             <div className="col-12">
               <h3 className="section-heading">Our Latest Blogs</h3>

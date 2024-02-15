@@ -151,8 +151,8 @@ function OurStore() {
                                         <select name="" className='selector form-control form-select ' id="">
                                             <option value="manual">Featured</option>
                                             <option value="best-selling" selected="selected">Best Selling</option>
-                                            <option value="title-ascending">Alphabetically, A-Z</option>
-                                            <option value="title-descending">Alphabetically, Z-A</option>
+                                            <option value="title-ascending">Alphabetically ( A-Z )</option>
+                                            <option value="title-descending">Alphabetically ( Z-A )</option>
                                             <option value="price-ascending">Price, low to high</option>
                                             <option value="price-descending">Price, high to low</option>
                                             <option value="created-ascending">Date, old to new</option>
