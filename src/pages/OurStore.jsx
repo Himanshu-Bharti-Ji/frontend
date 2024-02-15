@@ -6,8 +6,7 @@ import ReactStars from "react-rating-stars-component";
 import ProductCard from '../components/ProductCard';
 
 function OurStore() {
-    const [grid, setGrid] = useState(4);
-    alert(grid);
+    const [grid, setGrid] = useState(2);
     return (
         <>
             <Meta title={"On4All | Our Store"} />
@@ -162,10 +161,10 @@ function OurStore() {
                                     <div className="filter-right d-flex align-items-center gap-10">
                                         <p className="total-products mb-0 ">21 Products</p>
                                         <div className="grid d-flex align-items-center gap-10">
-                                            <img onClick={() => {setGrid(4)}} className='d-block img-fluid ' src="images/gr4.svg" alt="grid" />
-                                            <img onClick={() => {setGrid(3)}} className='d-block img-fluid ' src="images/gr3.svg" alt="grid" />
-                                            <img onClick={() => {setGrid(2)}} className='d-block img-fluid ' src="images/gr2.svg" alt="grid" />
-                                            <img onClick={() => {setGrid(1)}} className='d-block img-fluid ' src="images/gr.svg" alt="grid" />
+                                            <img onClick={() => { setGrid(2) }} className='d-block img-fluid ' src="images/gr4.svg" alt="grid" />
+                                            <img onClick={() => { setGrid(4) }} className='d-block img-fluid ' src="images/gr3.svg" alt="grid" />
+                                            <img onClick={() => { setGrid(6) }} className='d-block img-fluid ' src="images/gr2.svg" alt="grid" />
+                                            <img onClick={() => { setGrid(12) }} className='d-block img-fluid ' src="images/gr.svg" alt="grid" />
                                         </div>
 
                                     </div>
@@ -173,7 +172,12 @@ function OurStore() {
                             </div>
 
                             <div className="product-list pb-5 ">
-                                <ProductCard grid={grid} />
+                                <div className="d-flex flex-wrap justify-content-between  gap-15">
+                                    <ProductCard grid={grid} />
+                                    <ProductCard grid={grid} />
+                                    <ProductCard grid={grid} />
+                                    <ProductCard grid={grid} />
+                                </div>
                             </div>
                         </div>
                     </div>

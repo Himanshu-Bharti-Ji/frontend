@@ -404,10 +404,15 @@ footer .input-group-text {
   background-color: white;
   border-radius: 10px;
   overflow: hidden;
+  width: 100%;
 }
 
 .product-card:hover .action-bar {
   right: 12px;
+}
+
+.product-image img {
+  width: 270px;
 }
 
 .product-card:hover .product-image>img {
@@ -664,6 +669,22 @@ footer .input-group-text {
   background-color: #f2f2f2;
   padding: 10px;
   border-radius: 8px;
+}
+
+.gr-12 {
+  width: 100%;
+}
+
+.gr-6 {
+  width: 49%;
+}
+
+.gr-4 {
+  width: 32%;
+}
+
+.gr-2 {
+  width: 24%;
 }
 
 
