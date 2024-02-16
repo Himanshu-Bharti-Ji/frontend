@@ -177,6 +177,11 @@ function OurStore() {
                                     <ProductCard grid={grid} />
                                     <ProductCard grid={grid} />
                                     <ProductCard grid={grid} />
+                                    <ProductCard grid={grid} />
+                                    <ProductCard grid={grid} />
+                                    <ProductCard grid={grid} />
+                                    <ProductCard grid={grid} />
+                                    <ProductCard grid={grid} />
                                 </div>
                             </div>
                         </div>

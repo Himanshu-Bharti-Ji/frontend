@@ -12,13 +12,13 @@ function ProductCard(props) {
                 <div className="wishlist-icon position-absolute ">
                     <Link><img src="images/wish.svg" alt="" /></Link>
                 </div>
-                <div className="product-image">
+                <div className="product-image ">
                     <img className='img-fluid ' src="images/boat-headphone.jpg" alt="product image" />  
                 </div>
                 <div className="product-details">
                     <h6 className="brand">boAt</h6>
                     <h5 className="product-title">
-                        Headphnoes bulk 10 pack multi colored for students
+                    boAt Rockerz 450R Bluetooth Headphone with 40mm premium drivers
                     </h5>
                     <ReactStars
                         count={5}
@@ -27,6 +27,9 @@ function ProductCard(props) {
                         edit={false}
                         activeColor="#ffd700"
                     />
+                    <p className={`description ${grid === 12 ? "d-block": "d-none"}`}>
+                    With a great microphone and extra-base, boAt Rockerz 450 Bluetooth Headphone with 40mm premium drivers, Easy Operational Controls, and HD Immersive Audio (Aqua Blue) comes in the front line when a person needs headphones. A wireless headphone lover will basically love it and it can give its user great performance for gaming and listing issues. With Up To 8 hours of audio excellence, It provides a great opportunity for an Adaptive ear cup and headband.
+                    </p>
                     <p className="price">₹2,799</p>
                 </div>
                 <div className="action-bar position-absolute ">
