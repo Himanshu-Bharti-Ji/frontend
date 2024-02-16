@@ -355,7 +355,9 @@ footer .input-group-text {
   /* padding: 20px; */
   border-radius: 10px;
   overflow: hidden;
+  cursor: pointer;
 }
+
 
 .blog-card img {
   border-top-left-radius: 10px;
@@ -367,8 +369,10 @@ footer .input-group-text {
   transition: .3s cubic-bezier(0.51, 0.01, 0.46, 0.97);
 }
 
+
 .blog-content {
   padding: 15px;
+  margin-bottom: 12px;
 }
 
 .blog-content p.date {
@@ -726,6 +730,20 @@ footer .input-group-text {
 }
 
 /* Our Store Page End Here*/
+
+/* .blog-wrapper .col-9 {
+  width: 49%;
+} */
+
+/* Blog Page Start */
+
+.blog-page-card .col-6 {
+  width: 49%;
+}
+
+/* Blog Page End Here*/
+
+
 
 
 /* Footer Part Start */

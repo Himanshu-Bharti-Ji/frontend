@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom'
 
 function BlogCard() {
   return (
-    <div className='col-3'>
+    <div className={`${location.pathname === "/blogs" ? "col-6 mb-4" : "col-3"}`}>
       <div className="blog-card">
         <div className="card-image">
-            <img className='img-fluid ' src="images/blog-1.jpg" alt="blog image" />
+            <img className='img-fluid w-100' src="images/blog-1.jpg" alt="blog image" />
         </div>
         <div className="blog-content">
             <p className='date'>11 Feb, 2024</p>
