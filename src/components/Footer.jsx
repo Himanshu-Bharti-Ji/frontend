@@ -35,7 +35,7 @@ const Footer = () => {
               <h4 className='mb-4 text-white '>Contact Us</h4>
               <div>
                 <address className='text-white'>
-                  H No : F-110 Kondli, <br/> Delhi <br/> Pincode : 110096 
+                  H No : F - 110 Kondli, <br/> Delhi <br/> Pincode : 110096 
                 </address>
                 <a className='mt-3 d-block mb-1 text-white ' href="tel:+91 8447767283">+91 8447767283</a>
                 <a className='mt-2 d-block mb-2 text-white ' href="mailto:himanshubhartisoe@gmail.com">himanshubhartisoe@gmail.com</a>
@@ -49,7 +49,7 @@ const Footer = () => {
                   <a className='text-white fs-4' target='_blank' href="https://www.instagram.com/himanshu_bharti_ji/">
                     <BsInstagram/>
                   </a>
-                  <a className='text-white fs-4' target='_blank' href="">
+                  <a className='text-white fs-4' target='_blank' href="/">
                   <BsYoutube/>
                   </a>
                 </div>
@@ -62,7 +62,7 @@ const Footer = () => {
                 <Link className='text-white mb-1 py-2 '>Refund Policy</Link>
                 <Link className='text-white mb-1 py-2 '>Shipping Policy</Link>
                 <Link className='text-white mb-1 py-2 '>Terms & Conditions</Link>
-                <Link className='text-white mb-1 py-2 '>Blogs</Link>
+                <Link to={"/blogs"} className='text-white mb-1 py-2 '>Blogs</Link>
               </div>
             </div>
             <div className="col-3">
@@ -71,7 +71,7 @@ const Footer = () => {
                 <Link className='text-white mb-1 py-2 '>Search</Link>
                 <Link className='text-white mb-1 py-2 '>About Us</Link>
                 <Link className='text-white mb-1 py-2 '>Faq</Link>
-                <Link className='text-white mb-1 py-2 '>Contact</Link>
+                <Link to={"/contact"} className='text-white mb-1 py-2 '>Contact</Link>
                 <Link className='text-white mb-1 py-2 '>Size Chart</Link>
               </div>
             </div>
