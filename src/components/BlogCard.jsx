@@ -12,7 +12,7 @@ function BlogCard() {
             <p className='date'>11 Feb, 2024</p>
             <h5 className='title'>A beautiful sunday morning renaissance</h5>
             <p className="desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem dolore dicta tempora voluptatum ab sunt, quod nulla enim.</p>
-            <Link to="blog/:id" className='button'>Read More</Link>
+            <Link to={`${location.pathname === "/blogs" ? ":id" : "blogs/:id"}`} className='button'>Read More</Link>
         </div>
       </div>
     </div>

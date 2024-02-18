@@ -41,8 +41,8 @@ const SingleBlog = () => {
                                                 <p className='date mb-0 '>11 Feb, 2024</p>
                                             </div>
                                             <div className="back d-flex align-items-center ">
-                                            < IoArrowBackOutline className='mt-0' />
-                                            <Link className='ms-2'>Go to blogs</Link>
+                                            <Link to={"/blogs"} className='fs-4 ' >< IoArrowBackOutline className='mt-0' /></Link>
+                                            <Link to={"/blogs"} className='ms-2'>Go to blogs</Link>
                                             </div>
                                         </div>
                                     </div>
