@@ -4,15 +4,22 @@ import Meta from '../components/Meta';
 import BreadCrumb from '../components/BreadCrumb'
 import ProductCard from '../components/ProductCard';
 import ReactStars from "react-rating-stars-component";
+import InnerImageZoom from 'react-inner-image-zoom';
+import 'react-inner-image-zoom/lib/InnerImageZoom/styles.css';
+import Color from "../components/Color";
 
 // importing images
 import smartwatch from "../images/smartwatch.jpg"
+import smartwatchside01 from "../images/smartwatchside01.jpg"
+import smartwatchside02 from "../images/smartwatchside02.jpg"
+import smartwatchside03 from "../images/smartwatchside03.jpg"
+import smartwatchside04 from "../images/smartwatchside04.jpg"
 
 function SingleProduct() {
     const [orderedProduct, setOrderedProduct] = useState(true);
 
 
-  
+
 
     return (
         <>
@@ -22,15 +29,86 @@ function SingleProduct() {
             <div className="main-product-wrapper py-5 home-wrapper-2">
                 <div className="container-1640">
                     <div className="row">
-                        <div className="main-product-inner-wrapper bg-white p-3">
+                        <div className="main-product-images-wrapper bg-white p-3 d-flex">
                             <div className="col-6">
                                 <div className="main-product-image">
                                     <div>
-                                        <img src={smartwatch} alt="" />
+                                        <InnerImageZoom zoomScale={2.3} zoomType='hover' zoomPreload={true} hideHint={true} fadeDuration={0} src={smartwatch} zoomSrc={smartwatch} />
+                                    </div>
+                                </div>
+                                <div className="other-product-images d-flex d-wrap gap-15">
+                                    <div><img className='img-fluid ' src={smartwatchside01} alt="" /></div>
+                                    <div><img className='img-fluid ' src={smartwatchside02} alt="" /></div>
+                                    <div><img className='img-fluid ' src={smartwatchside03} alt="" /></div>
+                                    <div><img className='img-fluid ' src={smartwatchside04} alt="" /></div>
+                                </div>
+                            </div>
+                            <div className="col-6">
+                                <div className="main-product-details ms-4">
+                                    <div >
+                                        <h3 className='title border-bottom'>LEAF WATCH WIRELESS BT CALLING SMART WATCH-CARBON BLACK</h3>
+                                        <div className="border-bottom pb-3 ">
+                                            <p className="price">₹ 2,199</p>
+                                            <div className="d-flex gap-10 align-items-center ">
+                                                <ReactStars
+                                                    count={5}
+                                                    size={24}
+                                                    value={3}
+                                                    edit={false}
+                                                    activeColor="#ffd700"
+                                                />
+                                                <p className='mb-0 review-btn'>( 2 Reviews )</p>
+                                            </div>
+                                            <a className='review-btn' href="#review">Write a review</a>
+                                        </div>
+                                        <div className="border-bottom py-3 ">
+                                            <div className="d-flex gap-2  align-items-center my-3">
+                                                <h3 className='product-heading'>Type : </h3>
+                                                <p className='product-data'>Smartwatch</p>
+                                            </div>
+                                            <div className="d-flex gap-2  align-items-center my-3">
+                                                <h3 className='product-heading'>Brand : </h3>
+                                                <p className='product-data'>Leaf</p>
+                                            </div>
+                                            <div className="d-flex gap-2  align-items-center my-3">
+                                                <h3 className='product-heading'>Categories : </h3>
+                                                <p className='product-data'>Smartwatches Fitness Trackers Luxury Smartwatches Sports Watches Kids Smartwatches</p>
+                                            </div>
+                                            <div className="d-flex gap-2  align-items-center my-3">
+                                                <h3 className='product-heading'>Tags : </h3>
+                                                <p className='product-data'>Digital Watch Men's Smartwatch Leather Strap Wireless Charging Fitness Watch</p>
+                                            </div>
+                                            <div className="d-flex gap-2  align-items-center my-3">
+                                                <h3 className='product-heading'>Availability : </h3>
+                                                <p className='product-data'>Yes ( 240 in Stock )</p>
+                                            </div>
+                                            <div className="d-flex gap-2  flex-column  my-3">
+                                                <h3 className='product-heading'>Size : </h3>
+                                                <div className="d-flex flex-wrap gap-15">
+                                                    <span className="badge">S</span>
+                                                    <span className="badge">M</span>
+                                                    <span className="badge">L</span>
+                                                    <span className="badge">XL</span>
+                                                </div>
+                                            </div>
+                                            <div className="d-flex gap-2  flex-column  my-3">
+                                                <h3 className='product-heading'>Color : </h3>
+                                                <Color />
+                                            </div>
+                                            <div className="d-flex gap-2 align-items-center my-3">
+                                                <h3 className='product-heading'>Quantity : </h3>
+                                                <div className="">
+                                                    <input className='form-control w-75' type="number" name="quantity" id="" min={1} max={10} />
+                                                </div>
+                                                <div className="d-flex gap-15 align-items-center">
+                                                    <button className='button border-0 ' type="submit">Add to Cart</button>
+                                                    <button className='button border-0 signup '>Buy It Now</button>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-6"></div>
                         </div>
                     </div>
                 </div>
@@ -52,7 +130,7 @@ function SingleProduct() {
             </div>
 
 
-            <section className="reviews-wrapper py-5 home-wrapper-2">
+            <section id='review' className="reviews-wrapper py-5 home-wrapper-2">
                 <div className="container-1640">
                     <div className="row">
                         <div className="col-12">

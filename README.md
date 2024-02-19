@@ -12,4 +12,5 @@ Currently, two official plugins are available:
 - react-icons : for react based icons 
 - react-fast-marquee : for brand Sponsered portion (Marquee)
 - react-rating-stars-component : for rating the products
-- react-helmet : for changing the title and other mata tags of different pages 
+- react-helmet : for changing the title and other mata tags of different pages
+- react-inner-image-zoom : for zooming the image in the place of image  
