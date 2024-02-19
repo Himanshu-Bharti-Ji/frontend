@@ -3,6 +3,12 @@ import BreadCrumb from '../components/BreadCrumb'
 import Meta from '../components/Meta';
 import Color from '../components/Color';
 
+
+// importing images
+import cross from "../images/cross.svg"
+import smartwatch from "../images/smartwatch.jpg"
+
+
 function CompareProducts() {
     return (
         <>
@@ -14,9 +20,9 @@ function CompareProducts() {
                     <div className="row">
                         <div className="col-3">
                             <div className="compare-products-card position-relative ">
-                                <img className='position-absolute cross img-fluid ' src="images/cross.svg" alt="cross" />
+                                <img className='position-absolute cross img-fluid ' src={cross} alt="cross" />
                                 <div className="product-card-image">
-                                    <img className='img-fluid' src="images/smartwatch.jpg" alt="smartwatch" />
+                                    <img className='img-fluid' src={smartwatch} alt="smartwatch" />
                                 </div>
                                 <div className="compare-products-details">
                                     <h5 className="title">LEAF WATCH WIRELESS BT CALLING SMART WATCH-CARBON BLACK</h5>
@@ -51,9 +57,9 @@ function CompareProducts() {
                         </div>
                         <div className="col-3">
                             <div className="compare-products-card position-relative ">
-                                <img className='position-absolute cross img-fluid ' src="images/cross.svg" alt="cross" />
+                                <img className='position-absolute cross img-fluid ' src={cross} alt="cross" />
                                 <div className="product-card-image">
-                                    <img className='img-fluid' src="images/smartwatch.jpg" alt="smartwatch" />
+                                    <img className='img-fluid' src={smartwatch} alt="smartwatch" />
                                 </div>
                                 <div className="compare-products-details">
                                     <h5 className="title">LEAF WATCH WIRELESS BT CALLING SMART WATCH-CARBON BLACK</h5>

@@ -2,6 +2,16 @@ import React from 'react'
 import ReactStars from "react-rating-stars-component";
 import { Link, useLocation } from 'react-router-dom';
 
+
+// importing images
+
+import wish from "../images/wish.svg"
+import boat_headphone from "../images/boat-headphone.jpg"
+import prodcompare from "../images/prodcompare.svg"
+import view from "../images/view.svg"
+import add_cart from "../images/add-cart.svg"
+
+
 function ProductCard(props) {
     const {grid} = props;
     let location = useLocation();
@@ -10,10 +20,10 @@ function ProductCard(props) {
         <div className={`${location.pathname === "/store" ? `gr-${grid}` : "col-2"}`}>
             <Link to={"product/:id"} className="product-card position-relative ">
                 <div className="wishlist-icon position-absolute ">
-                    <Link><img src="images/wish.svg" alt="" /></Link>
+                    <Link><img src={wish} alt="wish image" /></Link>
                 </div>
                 <div className="product-image ">
-                    <img className='img-fluid ' src="images/boat-headphone.jpg" alt="product image" />  
+                    <img className='img-fluid ' src={boat_headphone} alt="product image" />  
                 </div>
                 <div className="product-details">
                     <h6 className="brand">boAt</h6>
@@ -35,13 +45,13 @@ function ProductCard(props) {
                 <div className="action-bar position-absolute ">
                     <div className="d-flex flex-column gap-15">
                         <Link>
-                        <img src="images/prodcompare.svg" alt="prodcompare" />
+                        <img src={prodcompare} alt="prodcompare" />
                         </Link>
                         <Link>
-                        <img src="images/view.svg" alt="view" />
+                        <img src={view} alt="view" />
                         </Link>
                         <Link>
-                        <img src="images/add-cart.svg" alt="add cart" />
+                        <img src={add_cart} alt="add cart" />
                         </Link>
                     </div>
                 </div>

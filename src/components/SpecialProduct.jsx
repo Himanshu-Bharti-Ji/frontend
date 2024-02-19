@@ -2,6 +2,12 @@ import React from 'react'
 import ReactStars from "react-rating-stars-component";
 import { Link } from 'react-router-dom';
 
+// importing images
+import samsungphone from "../images/special product/samsungphone.jpg"
+import samsungphone_2 from "../images/special product/samsungphone-2.jpg"
+import samsungphone_3 from "../images/special product/samsungphone-3.jpg"
+
+
 function SpecialProduct() {
     return (
         <div className='col-4 mb-4 '>
@@ -9,11 +15,11 @@ function SpecialProduct() {
                 <div className="d-flex justify-content-between row">
                     <div className='special-product-images col-6 '>
                         <div className='special-product-head-image'>
-                        <img className='img-fluid ' src="images/special product/samsungphone.jpg" alt="phone" />
+                        <img className='img-fluid ' src={samsungphone} alt="phone" />
                         </div>
                         <div className='d-flex gap-5  special-product-sub-image'>
-                        <img className='img-fluid ' src="images/special product/samsungphone-2.jpg" alt="phone" />
-                        <img className='img-fluid ' src="images/special product/samsungphone-3.jpg" alt="phone" />
+                        <img className='img-fluid ' src={samsungphone_2} alt="phone" />
+                        <img className='img-fluid ' src={samsungphone_3} alt="phone" />
                         </div>
                     </div>
                     <div className="special-product-content col-6 ">

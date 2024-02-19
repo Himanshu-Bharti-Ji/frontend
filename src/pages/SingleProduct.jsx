@@ -5,8 +5,15 @@ import BreadCrumb from '../components/BreadCrumb'
 import ProductCard from '../components/ProductCard';
 import ReactStars from "react-rating-stars-component";
 
+// importing images
+import smartwatch from "../images/smartwatch.jpg"
+
 function SingleProduct() {
-    const [orderedProduct, setOrderedProduct] = useState(true)
+    const [orderedProduct, setOrderedProduct] = useState(true);
+
+
+  
+
     return (
         <>
             <Meta title={"On4All | Product Name"} />
@@ -15,8 +22,16 @@ function SingleProduct() {
             <div className="main-product-wrapper py-5 home-wrapper-2">
                 <div className="container-1640">
                     <div className="row">
-                        <div className="col-6"></div>
-                        <div className="col-6"></div>
+                        <div className="main-product-inner-wrapper bg-white p-3">
+                            <div className="col-6">
+                                <div className="main-product-image">
+                                    <div>
+                                        <img src={smartwatch} alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-6"></div>
+                        </div>
                     </div>
                 </div>
             </div>

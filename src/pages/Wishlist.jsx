@@ -2,6 +2,15 @@ import React from 'react'
 import BreadCrumb from '../components/BreadCrumb'
 import Meta from '../components/Meta';
 
+
+// importing images
+import cross from "../images/cross.svg"
+import smartwatch from "../images/smartwatch.jpg"
+
+
+
+
+
 function Wishlist() {
     return (
         <>
@@ -13,9 +22,9 @@ function Wishlist() {
                     <div className="row">
                         <div className="col-3">
                             <div className="wishlist-card position-relative">
-                                <img className='position-absolute cross img-fluid ' src="images/cross.svg" alt="cross" />
+                                <img className='position-absolute cross img-fluid ' src={cross} alt="cross" />
                                 <div className="wishlist-card-image">
-                                    <img className='img-fluid' src="images/smartwatch.jpg" alt="smartwatch" />
+                                    <img className='img-fluid' src={smartwatch} alt="smartwatch" />
                                 </div>
                             </div>
                             <div className="wishlist-card-details">
@@ -25,9 +34,9 @@ function Wishlist() {
                         </div>
                         <div className="col-3">
                             <div className="wishlist-card position-relative">
-                                <img className='position-absolute cross img-fluid ' src="images/cross.svg" alt="cross" />
+                                <img className='position-absolute cross img-fluid ' src={cross} alt="cross" />
                                 <div className="wishlist-card-image">
-                                    <img className='img-fluid' src="images/smartwatch.jpg" alt="smartwatch" />
+                                    <img className='img-fluid' src={smartwatch} alt="smartwatch" />
                                 </div>
                             </div>
                             <div className="wishlist-card-details">
@@ -37,9 +46,9 @@ function Wishlist() {
                         </div>
                         <div className="col-3">
                             <div className="wishlist-card position-relative">
-                                <img className='position-absolute cross img-fluid ' src="images/cross.svg" alt="cross" />
+                                <img className='position-absolute cross img-fluid ' src={cross} alt="cross" />
                                 <div className="wishlist-card-image">
-                                    <img className='img-fluid' src="images/smartwatch.jpg" alt="smartwatch" />
+                                    <img className='img-fluid' src={smartwatch} alt="smartwatch" />
                                 </div>
                             </div>
                             <div className="wishlist-card-details">

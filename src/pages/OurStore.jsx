@@ -6,6 +6,14 @@ import ReactStars from "react-rating-stars-component";
 import ProductCard from '../components/ProductCard';
 import Color from '../components/Color';
 
+// importing images
+import smartwatch from "../images/smartwatch.jpg"
+import boat_headphone from "../images/boat-headphone.jpg"
+import gr4 from "../images/gr4.svg"
+import gr3 from "../images/gr3.svg"
+import gr2 from "../images/gr2.svg"
+import gr from "../images/gr.svg"
+
 function OurStore() {
     const [grid, setGrid] = useState(2);
     return (
@@ -96,7 +104,7 @@ function OurStore() {
                                 <div>
                                     <div className="random-products mb-3  d-flex ">
                                         <div className="w-50 ">
-                                            <img className='w-75' src="images/smartwatch.jpg" alt="watch" />
+                                            <img className='w-75' src={smartwatch} alt="watch" />
                                         </div>
                                         <div className="w-50">
                                             <h5>Smart Watch Series 7</h5>
@@ -112,7 +120,7 @@ function OurStore() {
                                     </div>
                                     <div className="random-products d-flex ">
                                         <div className="w-50 ">
-                                            <img className='w-75' src="images/boat-headphone.jpg" alt="headphone" />
+                                            <img className='w-75' src={boat_headphone} alt="headphone" />
                                         </div>
                                         <div className="w-50">
                                             <h5>boAt Headphnoes</h5>
@@ -149,10 +157,10 @@ function OurStore() {
                                     <div className="filter-right d-flex align-items-center gap-10">
                                         <p className="total-products mb-0 ">21 Products</p>
                                         <div className="grid d-flex align-items-center gap-10">
-                                            <img onClick={() => { setGrid(2) }} className='d-block img-fluid ' src="images/gr4.svg" alt="grid" />
-                                            <img onClick={() => { setGrid(4) }} className='d-block img-fluid ' src="images/gr3.svg" alt="grid" />
-                                            <img onClick={() => { setGrid(6) }} className='d-block img-fluid ' src="images/gr2.svg" alt="grid" />
-                                            <img onClick={() => { setGrid(12) }} className='d-block img-fluid ' src="images/gr.svg" alt="grid" />
+                                            <img onClick={() => { setGrid(2) }} className='d-block img-fluid ' src={gr4} alt="grid" />
+                                            <img onClick={() => { setGrid(4) }} className='d-block img-fluid ' src={gr3} alt="grid" />
+                                            <img onClick={() => { setGrid(6) }} className='d-block img-fluid ' src={gr2} alt="grid" />
+                                            <img onClick={() => { setGrid(12) }} className='d-block img-fluid ' src={gr} alt="grid" />
                                         </div>
 
                                     </div>

@@ -4,6 +4,10 @@ import Meta from '../components/Meta';
 import { Link } from 'react-router-dom';
 import { IoArrowBackOutline } from "react-icons/io5";
 
+// importing images
+import blog_1 from "../images/blog-1.jpg"
+
+
 const SingleBlog = () => {
     return (
         <>
@@ -34,7 +38,7 @@ const SingleBlog = () => {
                                         <h4 className='title mb-4'>A beautiful sunday morning renaissance</h4>
                                         <div className="blog-card">
                                             <div className="card-image">
-                                                <img className='img-fluid w-100' src="../images/blog-1.jpg" alt="blog image" />
+                                                <img className='img-fluid w-100' src={blog_1} alt="blog image" />
                                             </div>
                                             <div className="blog-content mt-3 pb-0 mb-0 ">
                                                 <p className="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ex atque odio exercitationem amet quia nesciunt ad, fuga libero quae. Commodi optio laborum modi nemo ipsum deleniti sint quod id non, autem distinctio soluta recusandae ipsa veniam explicabo quaerat nobis aliquam quas dignissimos, nostrum ducimus tempore! Repellendus temporibus dolores qui. Esse eligendi consequuntur ea perferendis.</p>
