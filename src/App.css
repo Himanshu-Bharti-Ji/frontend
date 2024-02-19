@@ -398,8 +398,7 @@ footer .input-group-text {
 
 }
 
-.single-blog-card .back
-{
+.single-blog-card .back {
   font-size: 15px;
   color: var(--color--777777);
   margin: 20px;
@@ -441,7 +440,7 @@ footer .input-group-text {
 }
 
 
-.product-card:not(:hover) .product-image>img{
+.product-card:not(:hover) .product-image>img {
   transform: scale(1);
   transition: .3s cubic-bezier(0.51, 0.01, 0.46, 0.97);
 }
@@ -480,6 +479,8 @@ footer .input-group-text {
 /* Product Card End Here*/
 
 
+
+
 /* Special Product Card Start */
 
 .special-product-card {
@@ -516,7 +517,7 @@ footer .input-group-text {
 }
 
 .progress-bar {
-  
+
   background-color: #38d238;
 }
 
@@ -767,7 +768,7 @@ footer .input-group-text {
   background-color: white;
 }
 
-.contact-form-wrapper > div {
+.contact-form-wrapper>div {
   width: 48%;
 }
 
@@ -843,7 +844,7 @@ footer .input-group-text {
   align-items: center;
   padding: 15px 0;
   border-top: 1px solid var(--color-ededed);
-} 
+}
 
 /* Compare Products Page End Here*/
 
@@ -903,7 +904,7 @@ footer .input-group-text {
   font-size: 13px;
   color: var(--color--777777);
 }
- 
+
 /* Login Page End Here*/
 
 
@@ -917,9 +918,68 @@ footer .input-group-text {
 
 /* Policy Page End Here*/
 
+/*  Main(Single) Product Page Start */
 
+.description-content {
+  border-radius: 10px;
+}
 
+.description-wrapper h4,
+.reviews-wrapper h3 {
+  font-size: 26px;
+  color: var(--color--1c1b1b);
+  margin-bottom: 30px;
+  font-size: 26px;
+  line-height: 32px;
+  font-weight: 500;
+}
 
+.description-wrapper p {
+  font-size: 14px;
+  color: var(--color--777777);
+}
+
+.review-inner-wrapper {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.review-head {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.review-head h4 {
+  font-size: 18px;
+  color: var(--color--1c1b1b);
+}
+
+.review-head p,
+.review-head a {
+  font-size: 14px;
+  color: var(--color--777777);
+}
+
+.review-form h4 {
+  font-size: 16px;
+  color: var(--color--777777);
+}
+
+.reviews p {
+  font-size: 14px;
+  color: var(--color--777777);
+}
+
+.review-form {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+}
+
+.review:not(:last-child) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/*  Main(Single) Product Page End Here*/
 
 /* Footer Part Start */
 /* Footer Part End Here*/

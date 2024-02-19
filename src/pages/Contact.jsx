@@ -47,7 +47,7 @@ const Contact = () => {
                     <ul>
                       <li className='mb-3 d-flex align-items-center gap-15'>
                         <IoHome className='fs-5' />
-                        <address className="mb-0">H No : F - 110 Kondli, Delhi</address>
+                        <address className="mb-0">H No : F - 110 Kondli, Delhi 110096</address>
                       </li>
                       <li className='mb-3 d-flex align-items-center gap-15'>
                         <IoCall className='fs-5' />
