@@ -106,7 +106,7 @@ function SingleProduct() {
                                             <div className="d-flex gap-2 align-items-center my-20">
                                                 <h3 className='product-heading'>Quantity : </h3>
                                                 <div className="">
-                                                    <input className='form-control w-75' type="number" name="quantity" id="" min={1} max={10} />
+                                                    <input className='form-control w-82' type="number" name="quantity" id="" min={1} max={10} />
                                                 </div>
                                                 <div className="d-flex gap-15 align-items-center">
                                                     <button className='button border-0 ' type="submit">Add to Cart</button>

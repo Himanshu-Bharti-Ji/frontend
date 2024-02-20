@@ -20,6 +20,7 @@ import RefundPolicy from './pages/RefundPolicy';
 import ShippingPolicy from './pages/ShippingPolicy';
 import TermsAndConditions from './pages/TermsAndConditions';
 import SingleProduct from './pages/SingleProduct';
+import Cart from './pages/Cart';
 
 function App() {
 
@@ -37,6 +38,7 @@ function App() {
             <Route path='blogs' element={<Blog />} />
             <Route path='blogs/:id' element={<SingleBlog />} />
             
+            <Route path='cart' element={<Cart />} />
 
             <Route path='compare-products' element={<CompareProducts />} />
             <Route path='wishlist' element={<Wishlist />} />

@@ -23,6 +23,14 @@
   margin-left: auto;
 }
 
+.w-28 {
+  width: 28%;
+}
+
+.w-82 {
+  width: 82%;
+}
+
 /* Root Variables Here*/
 :root {
   --color-131921: #131921;
@@ -1084,8 +1092,60 @@ footer .input-group-text {
 }
 
 
-
 /*  Main(Single) Product Page End Here*/
+
+
+
+
+/* Cart Page Start */
+
+.cart-header, .cart-data {
+  border-bottom: 1px solid #eaeaea;
+}
+
+.cart-header h4 {
+  font-size: 16px;
+  color: var(--color--777777);
+}
+
+.cart-col-1 {
+  width: 40%;
+}
+
+.cart-col-1 p {
+  color: var(--color--777777);
+  font-size: 14px;
+}
+
+.cart-col-2 {
+  width: 10%;
+}
+
+.cart-col-3 {
+  width: 15%;
+}
+
+.cart-col-4 {
+  width: 15%;
+}
+
+
+.cart-col-3 .cart-del-btn {
+  font-size: 24px;
+  color: var(--color-232f3e);
+  cursor: pointer;
+}
+
+.cart-data h5.price {
+  font-size: 16px;
+  color: #1c1b1b;
+}
+
+/* Cart Page End Here*/
+
+
+
+
 
 /* Footer Part Start */
 /* Footer Part End Here*/
