@@ -1045,6 +1045,10 @@ footer .input-group-text {
   color: var(--color--777777);
 }
 
+.main-product-details .my-20 {
+  margin: 20px 0;
+}
+
 .accordion-button {
   color: #212529; /* Set the text color to black */
   background-color: transparent; /* Remove background color */
@@ -1069,6 +1073,16 @@ footer .input-group-text {
 .accordion-body {
   border-color: #dee2e6; /* Set border color for accordion body */
 }
+
+.myAccordian {
+  border-top: 1px solid #dee2e6;
+}
+
+.myAccordian .accordion-body {
+  color: var(--color--777777);
+  font-size: 15px;
+}
+
 
 
 /*  Main(Single) Product Page End Here*/

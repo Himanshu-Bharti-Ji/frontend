@@ -8,6 +8,8 @@ import InnerImageZoom from 'react-inner-image-zoom';
 import 'react-inner-image-zoom/lib/InnerImageZoom/styles.css';
 import Color from "../components/Color";
 
+import { EmailShareButton, EmailIcon, FacebookShareButton, FacebookIcon, WhatsappShareButton, WhatsappIcon, TwitterShareButton, XIcon } from "react-share";
+
 // importing images
 import smartwatch from "../images/smartwatch.jpg"
 import smartwatchside01 from "../images/smartwatchside01.jpg"
@@ -23,6 +25,7 @@ import { LiaPuzzlePieceSolid } from "react-icons/lia";
 function SingleProduct() {
     const [orderedProduct, setOrderedProduct] = useState(true);
 
+    const currentPageUrl = window.location.href;
 
 
 
@@ -67,28 +70,28 @@ function SingleProduct() {
                                             <a className='review-btn' href="#review">Write a review</a>
                                         </div>
                                         <div className="border-bottom py-3 ">
-                                            <div className="d-flex gap-2  align-items-center my-3">
+                                            <div className="d-flex gap-2  align-items-center my-20">
                                                 <h3 className='product-heading'>Type : </h3>
                                                 <p className='product-data'>Smartwatch</p>
                                             </div>
-                                            <div className="d-flex gap-2  align-items-center my-3">
+                                            <div className="d-flex gap-2  align-items-center my-20">
                                                 <h3 className='product-heading'>Brand : </h3>
                                                 <p className='product-data'>Leaf</p>
                                             </div>
-                                            <div className="d-flex gap-2  align-items-center my-3">
+                                            <div className="d-flex gap-2  align-items-center my-20">
                                                 <h3 className='product-heading'>Categories : </h3>
                                                 <p className='product-data'>Smartwatches Fitness Trackers Luxury Smartwatches Sports Watches Kids Smartwatches</p>
                                             </div>
-                                            <div className="d-flex gap-2  align-items-center my-3">
+                                            <div className="d-flex gap-2  align-items-center my-20">
                                                 <h3 className='product-heading'>Tags : </h3>
                                                 <p className='product-data'>Digital Watch Men's Smartwatch Leather Strap Wireless Charging Fitness Watch</p>
                                             </div>
-                                            <div className="d-flex gap-2  align-items-center my-3">
+                                            <div className="d-flex gap-2  align-items-center my-20">
                                                 <h3 className='product-heading'>Availability : </h3>
                                                 <p className='product-data'>Yes ( 240 in Stock )</p>
                                             </div>
-                                            <div className="d-flex gap-2  flex-column  my-3">
-                                                <h3 className='product-heading'>Size : </h3>
+                                            <div className="d-flex gap-2  flex-column  my-20">
+                                                <h3 className='product-heading mb-2'>Size : </h3>
                                                 <div className="d-flex flex-wrap gap-15">
                                                     <span className="badge">S</span>
                                                     <span className="badge">M</span>
@@ -96,11 +99,11 @@ function SingleProduct() {
                                                     <span className="badge">XL</span>
                                                 </div>
                                             </div>
-                                            <div className="d-flex gap-2  flex-column  my-3">
-                                                <h3 className='product-heading'>Color : </h3>
+                                            <div className="d-flex gap-2  flex-column  my-20">
+                                                <h3 className='product-heading mb-2'>Color : </h3>
                                                 <Color />
                                             </div>
-                                            <div className="d-flex gap-2 align-items-center my-3">
+                                            <div className="d-flex gap-2 align-items-center my-20">
                                                 <h3 className='product-heading'>Quantity : </h3>
                                                 <div className="">
                                                     <input className='form-control w-75' type="number" name="quantity" id="" min={1} max={10} />
@@ -110,7 +113,7 @@ function SingleProduct() {
                                                     <button className='button border-0 signup '>Buy It Now</button>
                                                 </div>
                                             </div>
-                                            <div className="d-flex gap-15 align-items-center my-3">
+                                            <div className="d-flex gap-15 align-items-center my-20">
                                                 <div className='d-flex align-items-center gap-2'>
                                                     <a className='d-flex align-items-center gap-2' href=""><IoGitCompareOutline className='fs-5' />Add to Compare</a>
                                                 </div>
@@ -118,12 +121,12 @@ function SingleProduct() {
                                                     <a className='d-flex align-items-center gap-2' href=""><PiHeartStraight className='fs-5' />Add to Wishlist</a>
                                                 </div>
                                             </div>
-                                            <div className="myAccordian my-3">
+                                            <div className="myAccordian my-20">
                                                 <div class="accordion accordion-flush" id="accordionFlushExample">
                                                     <div class="accordion-item ">
                                                         <h2 class="accordion-header" id="flush-headingOne">
-                                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                                                            <span className='d-flex align-items-center gap-2'><LiaShippingFastSolid className='fs-5' />Shipping & Returns</span>
+                                                            <button class="accordion-button collapsed px-1" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                                                <span className='d-flex align-items-center gap-2'><LiaShippingFastSolid className='fs-5' />Shipping & Returns</span>
                                                             </button>
                                                         </h2>
                                                         <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
@@ -132,8 +135,8 @@ function SingleProduct() {
                                                     </div>
                                                     <div class="accordion-item ">
                                                         <h2 class="accordion-header" id="flush-headingTwo">
-                                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                                                            <span className='d-flex align-items-center gap-2'><LiaPuzzlePieceSolid className='fs-5' />Materials</span>
+                                                            <button class="accordion-button collapsed px-1" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                                                <span className='d-flex align-items-center gap-2'><LiaPuzzlePieceSolid className='fs-5' />Materials</span>
                                                             </button>
                                                         </h2>
                                                         <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
@@ -142,8 +145,8 @@ function SingleProduct() {
                                                     </div>
                                                     <div class="accordion-item ">
                                                         <h2 class="accordion-header" id="flush-headingThree">
-                                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                                                            <span className='d-flex align-items-center gap-2'><PiHeartStraight className='fs-5' />Care Instructions</span>
+                                                            <button class="accordion-button collapsed px-1" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                                                <span className='d-flex align-items-center gap-2'><PiHeartStraight className='fs-5' />Care Instructions</span>
                                                             </button>
                                                         </h2>
                                                         <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
@@ -152,8 +155,29 @@ function SingleProduct() {
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div className="d-flex gap-15 align-items-center my-3">
-                                                <a href="">Share : </a>
+                                            <div className="d-flex gap-15 align-items-center my-20">
+                                                <h3 className='product-heading'>Share : </h3>
+                                                <div>
+                                                    <FacebookShareButton url={currentPageUrl}>
+                                                        <FacebookIcon size={38} round={true} />
+                                                    </FacebookShareButton>
+                                                </div>
+                                                <div>
+                                                    <WhatsappShareButton url={currentPageUrl}>
+                                                        <WhatsappIcon size={38} round={true} />
+                                                    </WhatsappShareButton>
+                                                </div>
+                                                <div>
+                                                    <TwitterShareButton url={currentPageUrl}>
+                                                        <XIcon size={38} round={true} />
+                                                    </TwitterShareButton>
+                                                </div>
+                                                <div>
+                                                    <EmailShareButton url={currentPageUrl}>
+                                                        <EmailIcon size={38} round={true} />
+                                                    </EmailShareButton>
+                                                </div>
+
                                             </div>
                                         </div>
                                     </div>
