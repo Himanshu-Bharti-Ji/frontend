@@ -14,6 +14,11 @@ import smartwatchside01 from "../images/smartwatchside01.jpg"
 import smartwatchside02 from "../images/smartwatchside02.jpg"
 import smartwatchside03 from "../images/smartwatchside03.jpg"
 import smartwatchside04 from "../images/smartwatchside04.jpg"
+import { PiHeartStraight } from "react-icons/pi";
+import { IoGitCompareOutline } from "react-icons/io5";
+import { LiaShippingFastSolid } from "react-icons/lia";
+import { LiaPuzzlePieceSolid } from "react-icons/lia";
+
 
 function SingleProduct() {
     const [orderedProduct, setOrderedProduct] = useState(true);
@@ -104,6 +109,51 @@ function SingleProduct() {
                                                     <button className='button border-0 ' type="submit">Add to Cart</button>
                                                     <button className='button border-0 signup '>Buy It Now</button>
                                                 </div>
+                                            </div>
+                                            <div className="d-flex gap-15 align-items-center my-3">
+                                                <div className='d-flex align-items-center gap-2'>
+                                                    <a className='d-flex align-items-center gap-2' href=""><IoGitCompareOutline className='fs-5' />Add to Compare</a>
+                                                </div>
+                                                <div >
+                                                    <a className='d-flex align-items-center gap-2' href=""><PiHeartStraight className='fs-5' />Add to Wishlist</a>
+                                                </div>
+                                            </div>
+                                            <div className="myAccordian my-3">
+                                                <div class="accordion accordion-flush" id="accordionFlushExample">
+                                                    <div class="accordion-item ">
+                                                        <h2 class="accordion-header" id="flush-headingOne">
+                                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                                            <span className='d-flex align-items-center gap-2'><LiaShippingFastSolid className='fs-5' />Shipping & Returns</span>
+                                                            </button>
+                                                        </h2>
+                                                        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                                            <div class="accordion-body">Discover our hassle-free shipping and returns process designed to ensure your satisfaction. We strive to deliver your products promptly and offer a straightforward returns policy for your convenience.</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion-item ">
+                                                        <h2 class="accordion-header" id="flush-headingTwo">
+                                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                                            <span className='d-flex align-items-center gap-2'><LiaPuzzlePieceSolid className='fs-5' />Materials</span>
+                                                            </button>
+                                                        </h2>
+                                                        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                                            <div class="accordion-body">At On4All, we are committed to using high-quality materials to craft products that stand the test of time. Explore the exceptional materials we source to create durable and stylish items.</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion-item ">
+                                                        <h2 class="accordion-header" id="flush-headingThree">
+                                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                                            <span className='d-flex align-items-center gap-2'><PiHeartStraight className='fs-5' />Care Instructions</span>
+                                                            </button>
+                                                        </h2>
+                                                        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                                            <div class="accordion-body">To maintain the longevity and beauty of your purchase, follow our care instructions. These guidelines provide valuable insights on how to care for your product, ensuring it remains in excellent condition for years to come.</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="d-flex gap-15 align-items-center my-3">
+                                                <a href="">Share : </a>
                                             </div>
                                         </div>
                                     </div>
