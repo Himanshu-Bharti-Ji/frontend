@@ -1040,7 +1040,7 @@ footer .input-group-text {
   margin-bottom: 0;
 }
 
-.badge {
+.main-product-details .badge {
   border: 1px solid rgba(0, 0, 0, 0.25);
   border-radius: 0;
   font-size: 14px;

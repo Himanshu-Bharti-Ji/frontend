@@ -37,7 +37,7 @@ const Header = () => {
         <div className='container-1640'>
           <div className="row align-items-center justify-content-between">
             <div className="col-1">
-              <h2><Link className='text-white'>On4All</Link></h2>
+              <h2><Link to={"/"} className='text-white'>On4All</Link></h2>
             </div>
             <div className="col-5">
               <div className="input-group">
