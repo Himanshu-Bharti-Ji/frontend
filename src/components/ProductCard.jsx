@@ -15,10 +15,9 @@ import add_cart from "../images/add-cart.svg"
 function ProductCard(props) {
     const {grid} = props;
     let location = useLocation();
-
     return (
         <div className={`${location.pathname === "/store" ? `gr-${grid}` : "col-2"}`}>
-            <Link to={"product/:id"} className="product-card position-relative ">
+            <Link to={`${location.pathname === "/" ? "store/product/:id" : location.pathname === "store" ? "" : "product/:id"}`} className="product-card position-relative ">
                 <div className="wishlist-icon position-absolute ">
                     <button className='border-0 bg-transparent '>
                     <img src={wish} alt="wish image" />
